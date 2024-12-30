@@ -1,0 +1,4 @@
+[11-Oct-2024 15:41:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/yakaiobp/public_html/config/database.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/yakaiobp/public_html/config/database.php on line 18
