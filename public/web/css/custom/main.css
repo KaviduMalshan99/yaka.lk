@@ -4052,6 +4052,7 @@ textarea.form-control {
 .news-content h2 {
   margin-bottom: 15px;
   color: var(--chalk);
+  margin: 10px auto;
 }
 
 .news-form {
