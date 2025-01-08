@@ -94,19 +94,19 @@
 <!--=====================================
             FOOTER PART PART
 =======================================-->
-<footer class="footer-part">
+<footer class="footer-part" style="background-color:rgb(92, 2, 2); padding: 15px 0; text-align: left;" >
     <div class="container">
         <div class="row newsletter">
-            <div class="col-lg-9">
-                <div class="news-content">
+            <div class="col-lg-9" style="margin-top: 50px; text-align: left; margin-left: 30; padding:50px 20px 0px;">
+                <div class="news-content" style="margin: 10px auto;">
                     <h2>{{GoogleTranslate::trans('Subscribe for Latest Offers', app()->getLocale())}}</h2>
                     <p>{{GoogleTranslate::trans('Don’t miss out on the best deals in Sri Lanka’s largest marketplace! Subscribe now to receive exclusive offers, promotions, and updates directly to your inbox. Be the first to know about discounts on a wide range of products and services, from electronics and fashion to home goods and vehicles. Our subscription ensures you stay connected with the latest opportunities and special events tailored just for you. Join our growing community of savvy shoppers and make the most of your shopping experience. Sign up today and start saving!', app()->getLocale())}}</p>
                 </div>
             </div>
 
-            <div class="col-lg-3">
+            <div class="col-lg-3" style="margin-top: 120px;">
                 <div class="footer-info">
-                    <a href="#"><img src="{{asset('Logo-re.png')}}" alt="logo"></a>
+                    <a href="#"><img src="{{asset('Logo-re.png')}}" alt="logo" style="width: 300px; height: auto; object-fit: contain;"></a>
                 </div>
             </div>
 
@@ -123,14 +123,14 @@
                         <li>
                             <i class="fas fa-envelope"></i>
                             <p>
-                                <a href="mailto:Yaka.lk@outlook.com">Yaka.lk@outlook.com</a> <span>|</span> 
-                                <a href="mailto:Yakalksrilanka@gmail.com">Yakalksrilanka@gmail.com</a>
+                                <a href="mailto:Yaka.lk@outlook.com" style="text-decoration: none; color: inherit;">Yaka.lk@outlook.com</a> <span></span> 
+                                <a href="mailto:Yakalksrilanka@gmail.com" style="text-decoration: none; color: inherit;">Yakalksrilanka@gmail.com</a>
                             </p>
                         </li>
                         <li>
                             <i class="fas fa-phone-alt"></i>
                             <p>
-                                <a href="tel:+94705321321">070 5 321 321</a>
+                                <a href="tel:+94705321321"style="text-decoration: none; color: inherit;" >070 5 321 321</a>
                             </p>
                         </li>
                     </ul>

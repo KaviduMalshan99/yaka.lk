@@ -1,4 +1,4 @@
-<div style="background-color: #FF0000 !important; padding: 6px 12px 6px 12px !important;" class="header-content">
+<div style="background-color:rgb(92, 2, 2) !important; padding: 6px 12px 6px 12px !important;" class="header-content">
 
     <div style="color: #ffffff !important;" class="header-form row">
         <div class="col-4"><i style="margin-right:15px !important;" class="fa-solid fa-phone  "></i> <span>{{ GoogleTranslate::trans('Contact',app()->getLocale())}} : 070 5 321 321</span></div>
@@ -6,32 +6,51 @@
         <div class="col-4"><i style="margin-right:15px !important;"  class="fa-solid fa-location-dot "></i> <span>{{ GoogleTranslate::trans('Loaction', app()->getLocale())}} : Colombo 10, Sri Lanka</span>
         </div>
     </div>
-    <select class="form-select changeLang" style="width: 200px; padding: 10px; border-radius: 5px; border: 1px solid #ccc; font-size: 14px;">
-        <option value="en" {{ session()->get('locale') == 'en' ? 'selected' : '' }}>English</option>
-        <option value="si" {{ session()->get('locale') == 'si' ? 'selected' : '' }}>Sinhala</option>
-        <option value="ta" {{ session()->get('locale') == 'ta' ? 'selected' : '' }}>Tamil</option>
-    </select>
+
+    <div style="color: #ffffff !important;" class="header-right"> 
+    <button 
+        class="btn changeLang" 
+        data-lang="en" 
+        style="padding: 12px 25px; border-radius: 8px; font-size: 16px; background-color: {{ session()->get('locale') == 'en' ?  : '#6c#28a74757d' }}; color: white; border: none;">
+        English
+    </button>
+    <button 
+        class="btn changeLang" 
+        data-lang="si" 
+        style="padding: 12px 25px; border-radius: 8px; font-size: 17px; background-color: {{ session()->get('locale') == 'si' ?  : '#6c#28a74757d' }}; color: white; border: none;">
+        සිංහල
+    </button>
+    <button 
+        class="btn changeLang" 
+        data-lang="ta" 
+        style="padding: 12px 25px; border-radius: 8px; font-size: 16px; background-color: {{ session()->get('locale') == 'ta' ?  : '#6c#28a74757d' }}; color: white ; border: none;">
+        தமிழ்
+    </button>
+</div>
+
+
+   
 
     <div style="color: #ffffff !important;" class="header-right">
 
         <span>
             <a href="https://www.facebook.com/profile.php?id=61565478456618" target="_blank">
-                <i style="font-size: 20px  !important; color: black !important;" class="fab fa-facebook p-2"></i>
+                <i style="font-size: 20px  !important; color: white !important;" class="fab fa-facebook p-2"></i>
             </a>
         </span>
         <span>
             <a href="https://www.instagram.com/yaka.lk6/" target="_blank">
-                <i style="font-size: 20px  !important; color: black !important;" class="fab fa-instagram p-2"></i>
+                <i style="font-size: 20px  !important; color: white !important;" class="fab fa-instagram p-2"></i>
             </a>
         </span>
    {{-- <span>
             <a href="" target="_blank">
-                <i style="font-size: 20px  !important; color: black !important;" class="fab fa-tiktok p-2"></i>
+                <i style="font-size: 20px  !important; color: white !important;" class="fab fa-tiktok p-2"></i>
             </a>
         </span> --}}
         <span>
             <a href="https://www.youtube.com/@Yakalk-g5d" target="_blank">
-                <i style="font-size: 20px  !important; color: black !important;" class="fab fa-youtube p-2"></i>
+                <i style="font-size: 20px  !important; color: white !important;" class="fab fa-youtube p-2"></i>
             </a>
         </span>
         <!-- Added Instagram Icon -->
@@ -42,7 +61,7 @@
 
 </div>
 
-<header class="header-part">
+<header class="header-part"  style="background-color:rgb(49, 3, 3); padding: 15px 0;">
     <div class="container">
         <div class="header-content">
             <div class="header-left">
@@ -100,4 +119,6 @@
 {{--        </div>--}}
 
 </header>
+
+
 
