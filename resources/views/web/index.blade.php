@@ -2,7 +2,19 @@
 
 
 @section('content')
+<style>
+    .suggest-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+.suggest-card img {
+    transition: transform 0.3s ease; /* Smooth zoom effect for image */
+}
+.suggest-card:hover img {
+    transform: scale(1.1); /* Slightly zoom in the image */
+}
 
+</style>
 
     <!--=====================================
             BANNER PART START
@@ -33,9 +45,10 @@
                 SUGGEST PART START
     =======================================-->
     <section class="suggest-part" style="padding-top: 0 ;margin-top: 100px;">
-        <div class="container" style="display: flex;flex-wrap: wrap;justify-content: space-evenly;">
+        <div class="container" style="display: flex;flex-wrap: wrap;justify-content: center; ">
                 @foreach($categories as $category)
-                    <a href="{{route('ads',[$category->url])}}" class="suggest-card" style="width: 165px !important ;margin-bottom: 20px">
+                    <a href="{{route('ads',[$category->url])}}" class="suggest-card" 
+                    style="width: 165px !important ;margin-bottom: 20px; background-color: white; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
                         <img src="{{asset('images/Category/'.$category->image)}}" alt="car">
                         <h6>{{ GoogleTranslate::trans($category->name, app()->getLocale()) }}</h6>
                         @php
@@ -328,8 +341,8 @@
             </div>
             <div class="row">
                 @foreach($topcategories as $topcategory)
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                        <div class="category-card">
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3" style="margin-bottom:15px;">
+                        <div class="category-card" style="height: 100%; box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05);">
                             
 
                             <ul class="category-list">

@@ -96,7 +96,7 @@
 <!--=====================================
             FOOTER PART PART
 =======================================-->
-<footer class="footer-part">
+<footer class="footer-part" style="background-color:rgb(92, 2, 2); padding: 15px 0; text-align: left;" >
     <div class="container">
         <div class="row newsletter">
             <div class="col-lg-9">

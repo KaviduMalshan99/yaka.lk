@@ -1,9 +1,9 @@
 <div style="background-color:rgb(92, 2, 2) !important; padding: 6px 12px 6px 12px !important;" class="header-content">
 
     <div style="color: #ffffff !important;" class="header-form row">
-        <div class="col-4"><i style="margin-right:15px !important;" class="fa-solid fa-phone  "></i> <span>{{ GoogleTranslate::trans('Contact',app()->getLocale())}} : 070 5 321 321</span></div>
-        <div class="col-4"><i style="margin-right:15px !important;"  class="fa-solid fa-envelope "></i> <span>{{ GoogleTranslate::trans('Email', app()->getLocale())}} : Info@yaka.lk</span></div>
-        <div class="col-4"><i style="margin-right:15px !important;"  class="fa-solid fa-location-dot "></i> <span>{{ GoogleTranslate::trans('Loaction', app()->getLocale())}} : Colombo 10, Sri Lanka</span>
+        <div class="col-md-4 col-sm-10 d-flex"><i style="margin-right:15px !important;" class="fa-solid fa-phone mt-1"></i> <span>{{ GoogleTranslate::trans('Contact',app()->getLocale())}} : 070 5 321 321</span></div>
+        <div class="col-md-4 col-sm-10 d-flex"><i style="margin-right:15px !important;"  class="fa-solid fa-envelope  mt-1"></i> <span>{{ GoogleTranslate::trans('Email', app()->getLocale())}} : Info@yaka.lk</span></div>
+        <div class="col-md-4 col-sm-10 d-flex"><i style="margin-right:15px !important;"  class="fa-solid fa-location-dot  mt-1"></i> <span>{{ GoogleTranslate::trans('Loaction', app()->getLocale())}} : Colombo 10, Sri Lanka</span>
         </div>
     </div>
 

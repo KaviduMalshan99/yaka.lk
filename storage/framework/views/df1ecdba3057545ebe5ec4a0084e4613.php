@@ -1,0 +1,1 @@
+<?php /**PATH C:\xampp\htdocs\yaka.lk\resources\views\adminPanel\Banner\leaderboard-index.blade.php ENDPATH**/ ?>

@@ -94,7 +94,7 @@
 <!--=====================================
             FOOTER PART PART
 =======================================-->
-<footer class="footer-part" style="background-color:rgb(92, 2, 2); padding: 15px 0; text-align: left;" >
+<footer class="footer-part" style="background-color:rgb(47, 4, 4); padding: 15px 0; text-align: left;" >
     <div class="container">
         <div class="row newsletter">
             <div class="col-lg-9" style="margin-top: 50px; text-align: left; margin-left: 30; padding:50px 20px 0px;">
@@ -104,7 +104,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-3" style="margin-top: 120px;">
+            <div class="col-lg-3" style="margin-top: 150px;">
                 <div class="footer-info">
                     <a href="#"><img src="{{asset('Logo-re.png')}}" alt="logo" style="width: 300px; height: auto; object-fit: contain;"></a>
                 </div>
@@ -146,7 +146,7 @@
                         <li><a href="{{route('privacy-safety')}}">{{GoogleTranslate::trans('Privacy & Safety', app()->getLocale())}}</a></li>
                         {{-- <li><a href="{{route('careers')}}">Careers</a></li> --}}
                         <li><a href="{{route('tems-conditions')}}">{{GoogleTranslate::trans('Tems & Conditions', app()->getLocale())}}</a></li>
-                        {{-- <li><a href="{{route('faq')}}">Faq</a></li> --}}
+                        {{-- <li ><a href="{{route('faq')}}">Faq</a></li> --}}
                     </ul>
                 </div>
             </div>
@@ -184,8 +184,8 @@
             </div>
         </div>
     </div>
-    <div class="footer-end">
-        <div class="container">
+    <div class="footer-end" style="background-color:rgb(47, 4, 4); ">
+        <div class="container"
             <div class="footer-end-content" style="display: flex;justify-content: center;">
                 <p>© Copyright 2024 - SATASME HOLDINGS (Pvt) Ltd , All Rights Reserved</p>
 
